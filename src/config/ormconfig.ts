@@ -21,9 +21,7 @@ const ormConfig:MysqlConnectionOptions = {
     username: "root",
     password: "",
     database: "gate24",
-
     entities: ["dist/**/*.entity{.ts,.js}"],
-
     synchronize: true,
     // migrations: ["dist/migrations/*.js"],
     cli: {

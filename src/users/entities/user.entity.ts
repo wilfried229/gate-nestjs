@@ -12,7 +12,15 @@ export class User {
     @Column()
     password:String;  
     @Column()
-    token:String; 
+    role:String;
+    @Column()
+    api_token:String;
+    @Column()
+    account_number:number;
+    @Column()
+    remember_token:String;
+    @CreateDateColumn()
+    email_verified_at: Date;
     @CreateDateColumn()
     created_at: Date;
     @UpdateDateColumn()
