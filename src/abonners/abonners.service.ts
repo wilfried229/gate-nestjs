@@ -8,7 +8,6 @@ import { Abonner } from './entities/abonner.entity';
 @Injectable()
 export class AbonnersService {
 
-  constructor(@InjectRepository(Abonner) private AbonnerRepository:Repository<Abonner>){}
 
 
   create(createAbonnerDto: CreateAbonnerDto) {
