@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -14,8 +15,16 @@ import ormConfig from './config/ormconfig';
 import { AbonnersService } from './abonners/abonners.service';
 
 @Module({
-  imports: [UsersModule, TestsModule,TypeOrmModule.forRoot(ormConfig), SitesModule, AbonnersModule, RechargesModule, DemandeCartesModule],
-  controllers: [AppController,UsersController],
-  providers: [AppService,UsersService,AbonnersService],
+  imports: [
+    UsersModule,
+    TestsModule,
+    TypeOrmModule.forRoot(ormConfig),
+    SitesModule,
+    AbonnersModule,
+    RechargesModule,
+    DemandeCartesModule,
+  ],
+  controllers: [AppController, UsersController],
+  providers: [AppService, UsersService, AbonnersService],
 })
 export class AppModule {}
