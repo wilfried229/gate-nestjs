@@ -20,7 +20,7 @@ const ormConfig:MysqlConnectionOptions = {
     port: 3306,
     username: "root",
     password: "",
-    database: "gate24",
+    database: "gate_nestjs",
     entities: ["dist/**/*.entity{.ts,.js}"],
     synchronize: true,
     // migrations: ["dist/migrations/*.js"],
